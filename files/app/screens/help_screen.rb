@@ -11,7 +11,7 @@ class HelpScreen < PM::GroupedTableScreen
       cells: [
         { title: "Email us", action: :email_us },
         { title: "Dummy cell" }
-      }]
+      ]
     }]
   end
 
