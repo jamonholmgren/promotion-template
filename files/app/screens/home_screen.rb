@@ -12,7 +12,7 @@ class HomeScreen < PM::Screen
 
   def set_up_view
     set_attributes self.view, {
-      background_color: UIColor.whiteColor
+      background_color: UIColor.grayColor
     }
 
     add UILabel.new, {
