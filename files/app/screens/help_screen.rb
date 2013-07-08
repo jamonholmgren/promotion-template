@@ -1,8 +1,12 @@
 class HelpScreen < PM::GroupedTableScreen
   title "Help"
+  
+  def will_appear
+    set_nav_bar_button :left, title: "Close", action: :close_tapped
+  end
 
   def table_data
-    @help_table_data ||= [{
+    [{
       title: "Get Help",
       cells: [{
         title: "Email us", action: :email_us,
@@ -16,4 +20,7 @@ class HelpScreen < PM::GroupedTableScreen
     UIApplication.sharedApplication.openURL(mailto_link)
   end
   
+  def close_tapped
+    close
+  end
 end
