@@ -8,9 +8,9 @@ class HelpScreen < PM::GroupedTableScreen
   def table_data
     [{
       title: "Get Help",
-      cells: [{
-        title: "Email us", action: :email_us,
-        title: "Dummy cell"
+      cells: [
+        { title: "Email us", action: :email_us },
+        { title: "Dummy cell" }
       }]
     }]
   end
