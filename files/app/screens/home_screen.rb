@@ -8,7 +8,7 @@ class HomeScreen < PM::Screen
     set_nav_bar_button :right, title: "States", action: :states_tapped
   end
 
-  def on_presented
+  def on_present
     @view_setup ||= self.set_up_view
   end
 
