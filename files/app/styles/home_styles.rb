@@ -1,7 +1,10 @@
-# This is a fairly limited way to style your application.
-# For more complex apps, we recommend Teacup. https://github.com/rubymotion/teacup
+# This is a simple, CSS-like way to style your application.
+# You can set these attributes in your screens by using `add` or `set_attributes`
+# and passing in the method you want to use.
+#
+# Example usage: `add UILabel.new, :label_view_style`
 module HomeStyles
-  def label_view
+  def label_view_style
     {
       text: "Welcome to ProMotion!",
       text_color: UIColor.whiteColor,
@@ -12,6 +15,12 @@ module HomeStyles
       font: UIFont.boldSystemFontOfSize(18.0),
       resize: [ :left, :right, :top ], # ProMotion sugar here
       frame: CGRectMake(10, 10, 300, 45)
+    }
+  end
+
+  def home_view_style
+    {
+      background_color: UIColor.grayColor
     }
   end
 end

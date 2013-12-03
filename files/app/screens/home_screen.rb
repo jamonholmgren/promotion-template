@@ -8,16 +8,13 @@ class HomeScreen < PM::Screen
     set_nav_bar_button :right, title: "States", action: :states_tapped
   end
 
-  def on_present
+  def will_appear
     @view_setup ||= self.set_up_view
   end
 
   def set_up_view
-    set_attributes self.view, {
-      background_color: UIColor.grayColor
-    }
-
-    add UILabel.new, label_view # found in HomeStyles module
+    set_attributes self.view, :home_view_style # found in HomeStyles module
+    add UILabel.new, :label_view_style
 
     true
   end
