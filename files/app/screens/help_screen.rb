@@ -3,6 +3,10 @@ class HelpScreen < PM::GroupedTableScreen
   
   def will_appear
     set_nav_bar_button :left, title: "Close", action: :close_tapped
+    
+    # This is a workaround for an iOS 7 issue.
+    # Ref: https://github.com/clearsightstudio/ProMotion/issues/348
+    self.navigationController.navigationBar.translucent = false
   end
 
   def table_data
