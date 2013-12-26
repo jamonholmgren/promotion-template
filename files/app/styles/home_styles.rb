@@ -14,7 +14,7 @@ module HomeStyles
       text_alignment: UITextAlignmentCenter,
       font: UIFont.boldSystemFontOfSize(18.0),
       resize: [ :left, :right, :top ], # ProMotion sugar here
-      frame: CGRectMake(10, 10, 300, 45)
+      frame: CGRectMake(10, 100, 300, 45)
     }
   end
 
