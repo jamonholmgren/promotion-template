@@ -16,7 +16,7 @@ describe HomeScreen do
   end
 
   it "has a right nav bar button" do
-    home_screen.navigationItem.rightBarButtonItem.should.be.instance_of UIBarButtonItem
+    home_screen.navigationItem.rightBarButtonItem.should.be.kind_of(UIBarButtonItem)
   end
 
   it "opens the help screen when tapping Help" do
