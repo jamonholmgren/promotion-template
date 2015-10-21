@@ -21,14 +21,14 @@ class HelpScreen < PM::TableScreen
   end
 
   def about
-    PM.logger.info "Tapped about"
+    mp "Tapped about"
   end
 
   def more_about
-    PM.logger.info "Tapped more about"
+    mp "Tapped more about"
   end
 
   def help
-    PM.logger.info "Tapped help"
+    mp "Tapped help"
   end
 end
